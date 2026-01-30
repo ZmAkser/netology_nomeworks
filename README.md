@@ -1,2 +1,1 @@
-# netology_nomeworks
-for netology projects &amp; homeworks
+string number one!
