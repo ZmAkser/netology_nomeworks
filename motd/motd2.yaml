@@ -1,0 +1,19 @@
+- name: Set static MOTD with hostname and IP
+  hosts: localhost
+  become: true
+  gather_facts: true
+
+  tasks:
+    - name: Set /etc/motd
+      copy:
+        dest: /etc/motd
+        owner: root
+        group: root
+        mode: '0644'
+        content: |
+          +++++++++++++++++++++++++++++++++++++++
+           Hostname : {{ ansible_hostname }}
+           IP  : {{ ansible_default_ipv4.address }}
+          +++++++++++++++++++++++++++++++++++++++
+
+           Have a nice day, DUDE!
