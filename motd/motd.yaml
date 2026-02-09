@@ -1,0 +1,17 @@
+- name: Set MOTD from keyboard input
+  hosts: localhost
+  become: true
+
+  vars_prompt:
+    - name: motd_message
+      prompt: "Введите приветствие для MOTD:"
+      private: no
+
+  tasks:
+    - name: Set /etc/motd
+      copy:
+        dest: /etc/motd
+        content: "{{ motd_message }}"
+        owner: root
+        group: root
+        mode: '0644'
