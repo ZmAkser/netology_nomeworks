@@ -1,0 +1,5 @@
+---
+- hosts: ubuntusrvs
+  remote_user: mra
+  roles:
+    - ./roles/apach_role

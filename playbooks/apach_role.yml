@@ -1,0 +1,6 @@
+- name: Installing and Configure Apache2
+  hosts: ubuntusrvs
+#  gather_facts: true
+  become: true
+  roles:
+    - apach_role

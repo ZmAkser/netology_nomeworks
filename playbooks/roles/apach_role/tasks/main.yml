@@ -1,0 +1,27 @@
+---
+# defaults file for ./roles/apach_role
+  - name: Install Apache 2
+    package:
+      name: apache2
+      state: present
+  - name: Config index.html
+    template:
+      src: index.j2
+      dest: "/var/www/html/index.html"
+      owner: root
+      group: root
+      mode: "0644"
+  - name: Enable and start Apache
+    systemd:
+      name: apache2
+      enabled: yes
+      state: started
+  - name: Open 80 port
+    ufw:
+      rule: allow
+      port: '80'
+      proto: tcp
+  - name: Check http
+    uri:
+      url: http://172.29.101.225
+      status_code: 200
