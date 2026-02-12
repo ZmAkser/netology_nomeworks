@@ -10,6 +10,18 @@
 Изменить приветствие системы (motd) при входе на любое другое. Пожалуйста, в этом задании используйте переменную для задания приветствия. Переменную можно задавать любым удобным способом.
 
 ### Решение 1
+[Плейбук 1](https://github.com/ZmAkser/netology_nomeworks/blob/main/playbooks/download_archive.yml)
+
+!(https://github.com/ZmAkser/netology_nomeworks/blob/main/img/kafka.png)
+
+[Плейбук 2](https://github.com/ZmAkser/netology_nomeworks/blob/main/playbooks/install_tuned.yml)
+
+!(https://github.com/ZmAkser/netology_nomeworks/blob/main/img/tuned.png)
+
+[Плейбук3](https://github.com/ZmAkser/netology_nomeworks/blob/main/playbooks/make_motd.yml)
+
+!(https://github.com/ZmAkser/netology_nomeworks/blob/main/img/motd.png)
+!(https://github.com/ZmAkser/netology_nomeworks/blob/main/img/host.png)
 
 ### Задание 2
 Выполните действия, приложите файлы с модифицированным плейбуком и вывод выполнения.
@@ -18,6 +30,11 @@
 
 
 ### Решение 2
+
+[Плейбук 4](https://github.com/ZmAkser/netology_nomeworks/blob/main/playbooks/motd_v2.yml)
+
+!(https://github.com/ZmAkser/netology_nomeworks/blob/main/img/motd2.png)
+!(https://github.com/ZmAkser/netology_nomeworks/blob/main/img/host2.png)
 
 ### Задание 3
 Выполните действия, приложите архив с ролью и вывод выполнения.
@@ -32,3 +49,8 @@
 Сделать проверку доступности веб-сайта (ответ 200, модуль uri).
 
 ### Решение 3
+
+[Архив с ролью](https://github.com/ZmAkser/netology_nomeworks/blob/main/playbooks/role.tar)
+
+!(https://github.com/ZmAkser/netology_nomeworks/blob/main/img/apache_role.png)
+!(https://github.com/ZmAkser/netology_nomeworks/blob/main/img/apache_web.png)
