@@ -1,5 +1,5 @@
 - name: Set static MOTD with hostname and IP
-  hosts: localhost
+  hosts: ubuntusrvs
   become: true
   gather_facts: true
 
@@ -16,4 +16,4 @@
            IP  : {{ ansible_default_ipv4.address }}
           +++++++++++++++++++++++++++++++++++++++
 
-           Have a nice day, DUDE!
+           Have a good day, mr. Admin!

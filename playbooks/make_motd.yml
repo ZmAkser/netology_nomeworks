@@ -1,11 +1,11 @@
 - name: Set MOTD from keyboard input
-  hosts: localhost
+  hosts: ubuntusrvs
   become: true
 
   vars_prompt:
     - name: motd_message
       prompt: "Введите приветствие для MOTD:"
-      private: no
+      private: false
 
   tasks:
     - name: Set /etc/motd

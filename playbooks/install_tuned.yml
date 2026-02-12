@@ -1,5 +1,5 @@
 - name: Install and enable tuned
-  hosts: localhost
+  hosts: ubuntusrvs
   become: true
 
   tasks:
